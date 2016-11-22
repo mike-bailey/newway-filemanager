@@ -19,17 +19,14 @@ session_start();
  */
 
 if (isset($_POST['username']) && isset($_POST['password'])) {
-if (!empty($_POST['username']) && !empty($_POST['password'])) {
-$username = $_POST['username'];
-$password = $_POST['password'];
-if ($username == "admin" && $password == "admin") {
-    $_SESSION['access_key'] = md5("abcdefghijklmnopqrstuvwxyz");
-header("location: index.php");
-
-}
-
-
-}
+	if (!empty($_POST['username']) && !empty($_POST['password'])) {
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+		if ($username == "admin" && $password == "admin") {
+			$_SESSION['access_key'] = md5("abcdefghijklmnopqrstuvwxyz");
+			header("location: index.php");
+		}
+	}
 }
 
 ?>
@@ -39,14 +36,13 @@ header("location: index.php");
 <link rel="stylesheet" type="text/css" href="css/font.css" />
 <style type="text/css">
 @font-face {
-    font-family: ubuntu;
-    src: url("fonts/ubuntu.ttf");
+	font-family: ubuntu;
+	src: url("fonts/ubuntu.ttf");
 }
-
 body {
-    background-color: rgba(0,0,103,0.9);
-    color: white;
-    font-family: ubuntu;
+	background-color: rgba(0,0,103,0.9);
+	color: white;
+	font-family: ubuntu;
 }
 </style>
 <div class="col-xs-12"><br />
@@ -61,7 +57,7 @@ body {
 <h3>Login</h3>
 <br />
 <form action="login.php" method="POST">
-<p>username, password are admin</p>
+<p>The default username and password is admin.</p>
 <input type="text" class="form-control" name="username" value="admin">
 <br /><br />
 <input type="password" class="form-control" name="password" value="admin">

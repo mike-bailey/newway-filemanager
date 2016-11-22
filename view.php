@@ -2,6 +2,7 @@
 <title>NEW WAY</title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="css/font.css" />
+<link rel="stylesheet" type="text/css" href="css/jQueryFileTree.css" />
 <div class="col-xs-12 col-lg-12 col-md-4" id="header">
 <div class="form-group">
 <form action="view.php" method="GET" class="form-inline">
@@ -189,7 +190,7 @@ a:active {
 </style>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="jqueryFileTree.js"></script>
+<script type="text/javascript" src="js/jqueryFileTree.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function () {
