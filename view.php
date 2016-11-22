@@ -190,7 +190,7 @@ a:active {
 </style>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jqueryFileTree.js"></script>
+<script type="text/javascript" src="js/jQueryFileTree.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function () {
